@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="242dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:text="Перестаю есть" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="242dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:text="Начинаю есть"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/endTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:text="Интервальное голодание на 16 часов"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopButton"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textSize="24sp" />
+</RelativeLayout>
